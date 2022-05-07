@@ -2,7 +2,8 @@ process.env.VUE_APP_VERSION = require('./package.json').version// Include packag
 
 module.exports = {
   publicPath: './',
-  configureWebpack: {
-
+  configureWebpack: {},
+  devServer: {
+    proxy: 'http://localhost:5984'
   }
 }
