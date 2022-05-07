@@ -3,6 +3,8 @@
   "version": "22.04.01",
   "scripts": {
     "start": "vue-cli-service serve",
+    "start:couchdb": "cd docker && docker-compose up -d",
+    "stop:couchdb": "cd docker && docker-compose down",
     "serve:prod": "vue-cli-service serve --mode production --https",
     "serve:build": "vue-cli-service build && serve -s dist",
     "build": "vue-cli-service build",
