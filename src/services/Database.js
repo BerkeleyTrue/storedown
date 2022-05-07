@@ -77,7 +77,7 @@ export default function (forceCreate, replicationCompleteCallback) {
 
     // Only give url if one is defined
     if (userConfig && databaseConfig) {
-      remoteDatabaseConfig.url = `${databaseConfig.protocol}://${userConfig.username}:${userConfig.password}@${databaseConfig.host}:${databaseConfig.port}/${databaseConfig.database}`
+      remoteDatabaseConfig.url = `${databaseConfig.protocol}://${userConfig.username}:${userConfig.password}@${databaseConfig.host}/${databaseConfig.database}`
     }
 
     database = new Database(remoteDatabaseConfig, PouchDB)
