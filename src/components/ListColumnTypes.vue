@@ -3,7 +3,7 @@
     @click="rowClick(props)"
     :style="{
       'background-color': props.item.type === '_path' ? '#B39DDB' : '',
-      'color': props.item.type === '_path' ? '#263238' : '',
+      color: props.item.type === '_path' ? '#263238' : '',
       'font-weight': 'bold',
     }"
   >

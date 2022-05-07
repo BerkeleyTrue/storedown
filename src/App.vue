@@ -7,10 +7,7 @@
 <script>
 export default {
   name: 'App',
-  data: () => ({
-
-  })
-}
+  data: () => ({}),
+};
 </script>
-<style>
-</style>
+<style></style>
