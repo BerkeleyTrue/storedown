@@ -1,4 +1,4 @@
-name: Auto Test
+name: Unit Tests
 
 on:
   push:

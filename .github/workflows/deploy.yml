@@ -1,5 +1,5 @@
 ---
-name: ci
+name: Deploy to container registry
 
 on:
   push:
@@ -50,6 +50,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
+          file: '{context}/docker/Dockerfile'
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           platforms: linux/amd64,linux/arm64,linux/arm/v7
