@@ -2,7 +2,9 @@
   <tr
     @click="rowClick(props)"
     :style="{
-      'background-color': props.item.type === '_path' ? '#D84315' : '',
+      'background-color': props.item.type === '_path' ? '#B39DDB' : '',
+      'color': props.item.type === '_path' ? '#263238' : '',
+      'font-weight': 'bold',
     }"
   >
     <!--blue darken-1-->
@@ -50,7 +52,6 @@
 <script>
 export default {
   props: {
-    // <ListColumnTypes :props="props" :headers="headers" :rowClick="rowClick"/>
     props: Object,
     headers: Array,
     rowClick: Function,
