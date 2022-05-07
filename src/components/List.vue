@@ -7,7 +7,7 @@
       </template>
 
       <template v-slot:no-data>
-        <v-alert :value="!loading" color="error">
+        <v-alert :value="!loading" color="info">
           No data was found.
         </v-alert>
       </template>
