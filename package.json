@@ -6,6 +6,7 @@
     "serve:prod": "vue-cli-service serve --mode production --https",
     "serve:build": "vue-cli-service build && serve -s dist",
     "build": "vue-cli-service build",
+    "build:docker": "docker build -f docker/Dockerfile -t storedown .",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"

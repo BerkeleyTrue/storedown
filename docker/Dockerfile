@@ -13,6 +13,6 @@ RUN npm run build
 
 # Relese
 FROM nginx:stable-alpine
-COPY --from=builder /app/dist /usr/share/nginx/html/
+COPY --from=builder /usr/lib/app/dist /usr/share/nginx/html/
 
 EXPOSE 80
