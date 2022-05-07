@@ -252,7 +252,7 @@ export default {
         // Force DB service recreation.
         ConfigService.getConfig()
           .then((config) => {
-            console.log(config);
+            // console.log(config); /* eslint-disable-line no-console */
             this.submit();
           })
           .catch((error) => {
